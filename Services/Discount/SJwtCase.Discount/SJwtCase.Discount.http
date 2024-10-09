@@ -1,0 +1,6 @@
+@SJwtCase.Discount_HostAddress = http://localhost:5244
+
+GET {{SJwtCase.Discount_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

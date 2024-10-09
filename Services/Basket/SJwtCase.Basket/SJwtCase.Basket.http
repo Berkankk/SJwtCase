@@ -1,0 +1,6 @@
+@SJwtCase.Basket_HostAddress = http://localhost:5278
+
+GET {{SJwtCase.Basket_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

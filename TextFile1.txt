@@ -1,0 +1,19 @@
+þu an frontend istenmedi ama ilerleyen zamanda istenebilir dikkat et entitilere
+
+portlar düzeltilecek 7158 ve 7136 da kalkýyor kendimiz manuel bir þekilde port numaralarýný deðiþtirebiliyoruz 
+https den hata alýrsam http deneyeceðim sslden hata alýrsak
+
+
+IdentityServer = https://localhost:5001 
+Catalog Servisi = https://localhost:7200/swagger/  
+Discount Servisi = https://localhost:7201/swagger/
+Order Servisi =  https://localhost:7202/swagger/  
+Message Servisi =  https://localhost:7204/swagger/ 
+
+Ocelot Servisi = 5000 portuna istek atacak ve bunlardan önce ayaða kalkacak
+
+projeye mikroservis gibi yaklaþým yaptým sadece tüm projelerde MsSqlServer kullandým 
+OCELOT GATEWAY kullanrak hem yetkilendirme hem kimlik sorgulama yapýyorum ve yuka rýda bahsettiðim portlarý tek bir sunucuya baðlamaya çalýþýyorum
+Client ocelota istek atar istek nereye atýlýyorsa oraya yönlendirir
+
+https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html
